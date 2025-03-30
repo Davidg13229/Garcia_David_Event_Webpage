@@ -38,8 +38,11 @@ header {
 
 .nav_links {
     display: flex;
+    padding: 10px ;
+    align-items: center; 
+    justify-content: center;
     list-style: none;
-    margin-top: 5px;
+    margin-top: px;
 }
 
 .nav_links li {
@@ -52,8 +55,8 @@ header {
     font-size: 20px;
 }
 
-.Header_Button { 
-    padding: 15px;
+.nav_links button { 
+    padding: 14px;
     border-radius: 6px;
     background-color: #357440;
     border: 1px solid #357440;
