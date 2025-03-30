@@ -1,0 +1,623 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+body, html{
+    height: 100%;
+}
+
+/* Header Start */
+header {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav_links {
+    display: flex;
+    list-style: none;
+    margin-top: 5px;
+}
+
+.nav_links li {
+    margin: 0 20px;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.Header_Button { 
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #357440;
+    border: 1px solid #357440;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #e4e1e1;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.Header_Button:hover{
+    transform: scale(1.17);
+    color:#357440;
+    background-color: #333;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* Header End */
+
+/* Main Start */ 
+main {
+    flex: 1;
+}
+
+/* Hero Image & Text Start */ 
+.hero_image {
+    margin-top: 20px;
+    background-image: url(PineTree.png);
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero_image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.hero_text{
+    padding: 95px;
+    border-radius: 100px;
+    color:#eedb70;
+    text-shadow: -3px 4px 0.9px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.hero_text_h{
+    font-size: 3vw;
+    text-align: center;
+}
+
+.hero_text_p{
+    font-size: 1.7vw;
+    line-height: 2;
+    color: #F5F5DC;
+    text-align: center;
+}
+
+/* Hero Image & Text End */ 
+
+
+
+
+/* About Start */
+.About { 
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 150px 70px;
+    gap: 100px;
+    margin: auto;
+    background-color: #e4e1e1;
+}
+
+.About_Image {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 4px solid #e4e1e1;
+}
+
+.About_Header {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight:bold;
+    font-size: 4vw;
+    line-height: 2;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -1px 1px 0.5px #357440;
+    color: #357440;
+}
+
+.About_Header2 {               
+   text-align: left;
+   font-size: 2vw; 
+   font-weight: bold;
+   margin-top: 5px;
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 2;
+   color: #357440;
+   
+}
+.About_Content {
+    text-align: justify;
+    font-size: 1.2vw;
+    line-height: 1.75;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000; 
+
+}
+
+.About_Content li{
+    list-style: none;
+}
+/* About End */
+
+/* Speaker Start */
+.Speaker_Container{
+    background-color: #f4f2f2;
+    display: grid;
+    grid-template-areas:
+    "header header  header"
+    "Speaker Speaker Speaker";
+    grid-template-columns: auto auto auto;
+    
+}
+
+.Speaker_Container > .Speaker_Header {
+    grid-area: header;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -1px 1px 0.4px #357440;
+    color: #357440;
+}
+
+.Speaker_Container > .Speakers_Container{ 
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 150px;
+    padding-bottom: 100px;
+}
+.Speakers_Container h3 { 
+    text-align: justify;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.Speakers_Container h2, h3 { 
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.25vw;
+}
+
+.Speakers_Container p { 
+    text-align: justify;
+    font-size: 1vw;
+    
+}
+
+.Speakers_Container li { 
+    text-align: justify;
+    font-size: 1.1vw;
+}
+
+.Speakers_Container img{
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: 70px;
+    border: 5px solid #f4f2f2;
+    width: 15rem;
+    transition: 0.5s ease-in-out;
+}
+
+.Speakers_Container img:hover{
+transform: scale(1.5);
+}
+
+/* Speaker End*/
+
+/* Venue Start */
+.Venue{
+    padding: 100px 70px;
+    background-color: #e4e1e1;
+}
+
+.Venue_Image { 
+    width: 100%;
+    margin: 20px;
+    margin-right: 60px;
+    height: auto;
+    max-width: 400px;
+    float:left;
+    transition: transform 0.5s ease-in-out;
+}
+
+.Venue_Image:hover{
+   transform: scale(1.1); 
+}
+
+.Venue_Container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.Venue_Header {
+    font-size: 4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 70px;
+    text-shadow: -1px 1px 0.5px #357440;
+    color: #357440;
+    text-align: center; 
+}
+
+.text_container{
+    margin-left: 400px;
+}
+
+.Venue_Header_Sub{
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.Venue_Paragraph { 
+    font-size: 1.13vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;    
+    line-height: 2.4;
+
+}
+
+.Venue_Button{
+    padding: 18px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #357440;
+    color: #e4e1e1;
+    border: 2px solid #357440;
+    border-radius: 6px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.Venue_Button:hover{
+    transform: scale(1.3);
+    background-color: #e4e1e1;
+    color:#357440;
+}
+/* Venue End  */
+
+/*  Schedule Start */ 
+.Schedule { 
+    padding: 100px 70px;
+    background-color: #f4f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.Schedule_Header { 
+    font-size: 4vw;
+    margin-bottom:20px;
+    text-shadow: -1px 1px 0.5px #357440;
+    color: #357440;
+    text-align: center; 
+}
+
+.Schedule h2{
+    font-size: 2vw;
+    margin-bottom: 15px;
+    color: #000000;
+    text-align: center; 
+}
+
+.Sched_Text_Container { 
+    font-size: 1.4vw;
+    margin-bottom: 30px;
+    color: #000000;
+    text-align: center; 
+}
+
+.Sched_Table_Container { 
+    border: 4px solid #357440;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    text-align: center;
+    font-size: 1.4vw;
+    color: #f4f2f2;
+    background-color: #357440;  
+}
+
+td {
+    text-align: center;
+    font-size: 0.97vw;
+    color: black
+}
+
+.Sched_Table_Container th, td { 
+    padding-top: 21px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border: 2px solid #357440;
+    transition: transform 0.5s ease-in-out;
+}
+
+th:hover{
+    transform: scale(1.05);
+    color: #357440;
+    background-color: #f4f2f2;
+
+}
+
+/* Schedule End */ 
+
+
+/* Registration Start */
+.Registration {
+    padding: 100px 70px;
+    background-color: #e4e1e1;
+}
+
+.Registration_Header { 
+    font-size: 4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    text-shadow: -2px 3px 0.px black;
+    color: #357440;
+    text-align: center; 
+}
+
+input[type=text]{ 
+    width: 45%;
+    padding: 12px;
+    border: 1px solid #357440;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+.Form-Label { 
+    font-size: 1.25vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    color: #357440;
+}
+
+.Registration_Container{ 
+    background-color: #e4e1e1;
+    padding-left: 630px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.Submit_Button { 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1vw;
+    font-weight: bold;
+    color: #357440e1;
+    background: #e4e1e1;
+    border: 2px solid #357440;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.Submit_Button:hover { 
+    transform: scale(1.14);
+    color: #e4e1e1;
+    background: #357440;
+}
+
+/* Registration End */
+
+/* Footer Start */
+.Contact_Container {
+    padding: 100px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.Contact_Container h1 { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.3vw;
+    color: #357440;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.Contact_Icons { 
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.Contact_Icons i {
+    color: #357440;
+    padding-left: 20px
+}
+
+
+.Copyright_Information{ 
+    text-align: center;
+    font-size: 1.1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 40px;
+    color: #357440;
+}
+
+/* Footer End */
+
+/* Media Sizes Start */ 
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .nav_links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background-color: #333;
+        text-align: left;
+        padding: 5px 0;
+        z-index: 1001;
+    }
+
+    .nav_links.active {
+        display: flex;
+    }
+
+    .nav_links li {
+        margin: 10px 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .About {
+        flex-direction: column;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .About_Image {
+        width: 50%;
+        height: auto;
+        margin:  auto;
+    }
+
+    .Speaker_Container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .Speakers_Container img {
+        width: 9rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Venue_Image {
+        width: 100%;
+        max-width: 100px;
+        display: block;
+        margin: 20px auto;
+        float: none;
+    }
+
+    .text_container {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .Sched_Table_Container {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    th, td {
+        font-size: 2vw;
+        padding: 10px;
+    }
+
+    .Registration {
+        padding: 50px 20px;
+    }
+
+    .Registration_Header {
+        font-size: 6vw;
+    }
+
+    .Registration_Container {
+        padding: 20px;
+        text-align: left;
+    }
+
+    input[type=text] {
+        width: 90%;
+    }
+
+    .Form-Label {
+        font-size: 3vw;
+    }
+
+    .Submit_Button {
+        font-size: 3vw;
+        padding: 15px 25px;
+    }
+
+    .Contact_Container {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .Contact_Container h1 {
+        font-size: 5vw;
+    }
+
+    .Contact_Icons {
+        font-size: 3rem;
+    }
+
+    .Copyright_Information {
+        font-size: 3vw;
+    }
+}
+
+/* Media Sizes End */ 
