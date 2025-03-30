@@ -38,6 +38,7 @@ header {
 
 .nav_links {
     display: flex;
+    padding: 10px;
     align-items: center; 
     list-style: none;
 }
