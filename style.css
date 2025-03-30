@@ -26,8 +26,6 @@ header {
     color: white;
     position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
     z-index: 1000;
 }
 
@@ -42,7 +40,6 @@ header {
     align-items: center; 
     justify-content: center;
     list-style: none;
-    margin-top: px;
 }
 
 .nav_links li {
