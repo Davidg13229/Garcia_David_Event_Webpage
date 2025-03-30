@@ -26,6 +26,8 @@ header {
     color: white;
     position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
     z-index: 1000;
 }
 
@@ -564,7 +566,7 @@ input[type=text]{
     .Speakers_Container li {
         font-size: 4vw; 
     }
-    
+
     .Venue_Image {
         width: 100%;
         max-width: 100px;
